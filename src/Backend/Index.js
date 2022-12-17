@@ -6,6 +6,8 @@ class ProductManager {
   static products;
   
 constructor (title,description,price,thumbnail,code,stock){
+this.products=[]
+
   ProductManager.id += 1;
   this.title= title;
   this.description= description;
@@ -49,3 +51,39 @@ else{
 }
 
 console.log(ProductManager);
+
+
+
+const isInCart = (id) => { return products.find (product =>product.title ===title) }
+
+
+const getProducts = () =>  {
+
+    console.log(products)
+
+}
+
+
+const getProductsById = (id) => {
+
+  const search = products.find(product => product.id === id)
+
+if (search == undefined) {
+  console.log( "Product not found")
+}
+else {
+  console.log(search)
+}
+}
+const isInProducts = (title) => {
+    products.find (prod => prod.title === title)
+}
+
+
+const prod1 = new  ProductManager ("Hamburguesa Hispter", "Selección especial 5 ingredientes", 3000, "imagen referencia", 100, 10);
+const prod2 = new ProductManager ("Hamburguesa Americana", "Ingredientes gourmet", 5000,"imagen referencia", 102, 20 );
+
+prod1.addProduct()
+prod2.addProduct()
+
+getProducts()

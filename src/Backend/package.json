@@ -1,0 +1,22 @@
+{
+  "name": "fs_sinc",
+  "version": "1.0.0",
+  "description": "paquete npm",
+  "main": "fs_sinc",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jubascunanc/Back-End.git"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "Juanjose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jubascunanc/Back-End/issues"
+  },
+  "homepage": "https://github.com/jubascunanc/Back-End#readme"
+}
