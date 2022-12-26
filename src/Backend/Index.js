@@ -1,22 +1,39 @@
 const products=[]
 
+const fs= require('fs')
 
-class ProductManager {
-  static id= 1;
-  static products;
+
+class Readfile {
+  constructor(path){
+    this.path=path;
+    this.products= this.readfile();
+  }
+
   
-constructor (title,description,price,thumbnail,code,stock){
-this.products=[]
+  readFile() {
 
-  ProductManager.id += 1;
-  this.title= title;
-  this.description= description;
-  this.price=price;
-  this.thumbnail=thumbnail;
-  this.code=code;
-  this.stock=stock;
-  ProductManager.id;
-}
+    try {
+    
+    const data = JSON.parse(fs.readFileSync(`./${this.path}`, "utf-8"));
+    
+    return data;
+    
+    } catch (error) {
+    
+    return []
+    
+    }
+    
+    console.log(Readfile)
+
+    }
+
+
+    writeData(data) {
+      let dataString = JSON.stringify(data);
+      fs.writeFileSync(`./${this.path}`, dataString);
+    }
+
 
 addProduct(){
   const product=({
@@ -86,4 +103,7 @@ const prod2 = new ProductManager ("Hamburguesa Americana", "Ingredientes gourmet
 prod1.addProduct()
 prod2.addProduct()
 
-getProducts()
+getProducts() 
+
+
+

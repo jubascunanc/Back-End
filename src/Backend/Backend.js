@@ -11,8 +11,8 @@ class Registro{
     }
 }
 
-const usuario1 = new Registro ('Juan José', 20);
-const usuario2 = new Registro ('Santiago', 21);
+const usuario1 = new Registro ('Juan José', 25);
+const usuario2 = new Registro ('Santiago', 24);
 
 console.log(usuario1.Registro());
 console.log(usuario2.Registro());
