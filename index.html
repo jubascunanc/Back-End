@@ -4,22 +4,90 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable= no, maximum-scale= 1.0 minimum-scale= 1.0">
-  <link rel="stylesheets" href="./src/css/estilos.css">
+  <link rel="stylesheet" href="./src/css/estilos.css">
+  <link rel="shortcut icon" href="./src/Imagenes/shop-foto.png">
   <script src="src/Backend/Backend.js"></script>
   <script src="./src/Backend/Index.js"></script>
+  <script src="./src/Backend/Index2.js"></script>
   <title>Back End - Coderhouse</title>
 </head>
 
   <body>
 
-    <h1>Backend Coderhouse </h1>
+
+    <div class="menu-barra">
+      <a href="./src/Paginas/mercado.html">Mercado</a>
+      <a href="./src/Paginas/perfil.html">Perfil</a>
+      <a href="./src/Paginas/carrito.html">Carrito</a>
+      <a href="./src/Paginas/nosotros.html">Nosotros</a>
+      <a href="./src/Paginas/contacto.html">Contacto</a>
+    </div>
+ 
+    <div class="background-fondo">
+    <section>
+      <div class="logotipo">
+        <img src="./src/Imagenes/shop-foto.png" width="120px">
+      </div>
+    </section>
+    
+
+    <h1>Mercado de Barrio </h1>
       <h2>Simulador de Compra Online </h2>
+      <h3>¡Cotiza aquí tu compra! </h3>
 
-      <h3>Simula tu compra aquí</h3>
+  </div>
 
-      <p>Pagar aquí </p>
-      <button>Comprar </button>
-      
+<div class="lista-compra">
+  <ul>
+    <li><a href="./src/Paginas/mercado.html">Frutas y Verduras</a></li>
+    <li><a href="./src/Paginas/mercado.html">Comestibles</a></li>
+    <li><a href="./src/Paginas/mercado.html">Carniceria</a></li>
+    <li><a href="./src/Paginas/mercado.html">Bebestibles</a></li>
+    <li><a href="./src/Paginas/mercado.html">Alcohol</a></li>
+    <li><a href="./src/Paginas/mercado.html">Pasteleria</a></li>
+    <li>Panaderia</li>
+  </ul>
+</div>
+
+  <section>
+    <div class="section-compra">
+      <h2>Mercado vecinal</h2>
+      <p><b>Encarga desde tu barrio</b></p>
+    <p>Agrega a tu carrito todo lo que quieras de nuestro mercado Online </p>
+  </div>
+
+  </section>
+
+  <div class="boton-evento" id="btn-event">
+    <button> Cotizar </button>
+    <script> window.addEventListener("load", init);
+    function init(){
+      var boton  = document.getElementById("btn-event");
+      boton.addEventListener("click", saludar);
+    }
+    {
+      function saludar(){
+        window.alert("cotizado!");
+      }
+    }
+    prompt("¿Que quieres comprar?")
+    </script>
+  
+  </div>
+  
+
+
+
+
+<div class="mercado-vitrina">
+  <ul>
+   <ol>Frutas fresca</ol>
+   <img src="./src/Imagenes/frutas.jpg" width="400px">
+   <ol>Comestible conserva</ol>
+   <img src="./src/Imagenes/verdad-liquido-botes-conserva-1869859.webp" width="400px">
+  </ul>
+</div>
+
   </body>
 
 </html>

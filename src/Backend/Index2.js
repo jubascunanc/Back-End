@@ -40,12 +40,12 @@ class ProductManager {
                 
                 throw new Error('Todos los campos son obligatorios'); 
             } else if (checkInCart){
-                console.log("ERROR - Porfavor verifica la infromación una vez más")
+                console.log("ERROR - Porfavor verifica la información una vez más")
             }
         else {
             
             
-            listado.id = listado.length > 0 ? listado[listado.length - 1].id + 1 : 1;
+            product.id = listado.length > 0 ? listado[listado.length - 1].id + 1 : 1;
             listado.push(product)
             this.writeData(listado)
                              
@@ -128,7 +128,7 @@ deleteAll(){
 
 const newProd = new ProductManager('productos.JSON');
 
-newProd.addProducts(1,{
+newProd.addProducts({
             title: "Hamburguesa Hispter",
             description: "comida gourmet especial",
             price: 3500,
@@ -137,7 +137,7 @@ newProd.addProducts(1,{
             stock: 10,
 }) 
 
-newProd.addProducts(2,{
+newProd.addProducts({
     title: "Sandwich especial",
     description: "desayuno brunch",
     price: 1500,
@@ -146,7 +146,7 @@ newProd.addProducts(2,{
     stock: 20,
 }) 
 
-newProd.updateProduct(3,{
+newProd.updateProduct(1,{
     title: "Pizza Vegetariana",
     description: "Pizza ingredientes vegtariana",
     price: 5000,
@@ -155,3 +155,4 @@ newProd.updateProduct(3,{
     stock: 25,
 }) 
 
+console.log(newProd.getProducts());

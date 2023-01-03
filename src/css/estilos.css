@@ -1,0 +1,77 @@
+
+h1{
+    color:rgb(255, 255, 255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin:80px;
+}
+
+h2{
+   color:rgb(12, 190, 193);
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 32px;
+   margin: 100px;
+}
+
+h3{
+    color:rgb(255, 255, 255);
+    background-color: black;
+    width:120px;
+    margin:100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lista-compra{
+   display:block;
+   background-color: rgb(81, 167, 229);
+   border-radius: 5%;
+   width:160px;
+   height:160px;
+}
+
+
+p{
+  color:black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a{
+    color:white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-between;
+}
+
+button{
+    color:rgb(50, 50, 50);
+    border-radius: 5%;
+    margin:80px;
+    margin-top: -120px;
+    justify-content: center;
+}
+
+.logotipo{
+   width:200px;
+}
+
+.menu-barra{
+    background-color: rgb(81, 167, 229);
+    width:1408px;
+    height:100px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.background-fondo{
+    background-image: url(https://www.clarin.com/img/2015/12/20/Bypi7teEl_1256x620.jpg);
+    background-size: cover;
+    width:1408px;
+    height: 600px;
+}
+
+.mercado-vitrina{
+    display: grid;
+
+}
